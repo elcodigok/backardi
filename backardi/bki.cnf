@@ -17,26 +17,10 @@
 [Global]
 
 # Sistema corresponde al nombre de la Aplicacion.
-	sistema = bacKardi
+	sistema = "bacKardi"
 
 # Version del sistema.
-	version = 0.6
-
-[Comandos]
-
-# id mustra la identidad e informacion del usuario.
-	id = /usr/bin/id 
-
-# echo muestra una cadena por salida estandar.
-	echo = /bin/echo 
-
-# hostname es usado para mostrar el nombre de su sistema.
-	hostname = /bin/hostname 
-
-# comandos para realizar operaciones con archivos
-	rm = /bin/rm 
-	mv = /bin/mv 
-	cp = /bin/cp 
+	version = "0.6"
 
 [Configuracion]
 
@@ -44,27 +28,27 @@
 # de backup que se generen.
 #
 # Para comprimir archivo con extension .tar
-#	compresion = tar
+#	compresion = "tar"
 #
 # Para comprimir archivos con extension .tar.gz
-#	compresion = gzip
+#	compresion = "gzip"
 #
 # Para comprimir archivos con extension .tar.bz2
-#	compresion = bzip2
+#	compresion = "bzip2"
 #
 # Para comprimir archivos con extension .rar
-#	compresion = rar
+#	compresion = "rar"
 #
 # Para comprimir archivos con extension .arj
-#	compresion = arj
-	compresion = gzip
+#	compresion = "arj"
+	compresion = "gzip"
 
 # backup_dir es el listado de todos los directorios del que
 # se van a realizar un resguardo.
 #   backup_dir = /etc /home /usr
-	backup_dir = /etc /home 
+	backup_dir = "/etc /home"
 
 # backup_dest_dir es el directorio donde se va a almacenar el 
 # resguardo que vamos a realizar.
 #   backup_dest_dir = /tmp
-	backup_dest_dir = /var/backups
+	backup_dest_dir = "/var/backups"
