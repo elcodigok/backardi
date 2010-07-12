@@ -1,0 +1,34 @@
+
+        bacKardi -- Un sistema de Backup -- 06.07.2010
+
+                    Daniel Martin Maldonado     danyx@elcodigok.com.ar
+                                                danyx@larepaweb.com.ar 
+
+[ Instalacion ]
+
+  Para poder instalar bacKardi, el sistema de Backup debes realizar lo siguiente.
+
+  * Descargar el sistema bacKardi.tar.gz 
+  * Descomprimir el archivo en algún directorio.
+      $ tar -zxvf backardi.tar.gz
+  * Desde una terminal de comandos o Shell dirigite al directorio de trabajo.
+  * Por ultimo ejecutar el instalador, para ello debes ser el superusuario root.
+      # ./install.sh
+    ó
+      # bash install.sh
+  * Todos los archivos de configuración se encuentran en /etc/backardi/
+  * Para conocer mas de backardi se encuentra la documentacion en 
+	  # /usr/share/man/man1/backardi.1.gz
+	ó
+	  # man backardi
+	ó
+	  # backardi --help
+
+
+[ Eliminacion ]
+
+  Para poder eliminar bacKardi, solo debemos ejecutar el script que viene provista en el 
+código fuente. Nuevamente como super usuario root.
+	  $ ./unistall.sh
+	ó
+	  $ bash unistall.sh

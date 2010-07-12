@@ -1,0 +1,23 @@
+= Version 0.6
+
+Optimizacion y estandarizacion en el código fuente de bacKardi
+
+= Version 0.5
+
+Implementacion del unistall para eliminar backardi de la PC.
+
+= Version 0.4
+
+Implementacion de paginas de ayuda y manual de usuario.
+
+= Version 0.3
+
+Implementacion de un instalador de la aplicacion.
+
+= Version 0.2
+
+Implementacion de algoritmos de compresion rar, tar, tar.gz, tar.bz2 y arj.
+
+= Version 0.1
+
+Primer trabajo para la version beta de bacKardi. En primera instancia solo en lenguaje Espanol. Armado de la estructura jerarquica de directorios.
