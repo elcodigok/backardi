@@ -34,8 +34,9 @@ which_compress() {
 }
 
 mensaje() {
-   local mensaje="${1}"
+  local mensaje="${1}"
   "${ECHO}" -e "${mensaje}"
+  #printf $(gettext "%s\n") "${mensaje}"
 }
 
 exito() {

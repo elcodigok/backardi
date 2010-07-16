@@ -43,12 +43,27 @@
 #	compresion = "arj"
 	compresion = "gzip"
 
-# backup_dir es el listado de todos los directorios del que
-# se van a realizar un resguardo.
+# backup_dir es el listado de todos los directorios del sistema 
+# que se va a realizar un resguardo.
 #   backup_dir = /etc /home /usr
 	backup_dir = "/etc /home"
 
 # backup_dest_dir es el directorio donde se va a almacenar el 
-# resguardo que vamos a realizar.
+# resguardo que se va a realizar.
 #   backup_dest_dir = /tmp
 	backup_dest_dir = "/var/backups"
+
+# formato es el formato de la fecha para ordenar los nombres
+# de los backups que se va a realizar.
+#   formato = "[parametros]"
+#   formato = "%A-%d-%B-%Y"     (ej. lunes-23-enero-2010)
+#
+# [parametros]
+#       %A      Nombre completo del dia de la semana (ej lunes)
+#       %B      Nombre completo del mes (ej. enero)
+#       %Y      Anio (ej. 2010)
+#       %F      Fecha completa con formato %Y-%m-%d
+#       %T      Hora (ej. 13:47:30)
+#       %d      Dia del mes (ej. 23)
+#       %m      Numero correspondiente al mes (01..12)
+  formato = "%A-%d-%B-%Y"

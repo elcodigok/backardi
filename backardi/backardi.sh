@@ -57,13 +57,18 @@ which_cmd   HOSTNAME    hostname
 # ---------- Obtener valores de configuracion ----------------
 
 DIR_TRABAJO="/etc/backardi"
-NOMBRE_FECHA=`date '+%A-%d-%B-%Y'`
 
 which_config    SISTEMA     sistema
 which_config    VERSION     version
 which_config    BACKUP_DIR  backup_dir
 which_config    BACKUP_DEST_DIR     backup_dest_dir
 which_config    COMPRESION  compresion
+which_config    FORMATO     formato
+
+#NOMBRE_FECHA=`date '+%A-%d-%B-%Y'`
+NOMBRE_FECHA=`date +"${FORMATO}"`
+
+#echo "Formato de la fecha: " `date +"${FORMATO}"`
 
 # --------------- Control de usuario ------------------------
 
