@@ -23,9 +23,13 @@ which_cmd() {
 }
 
 which_config() {
-  local variable=`"${GREP}" -v "#" "${DIR_TRABAJO}"/bki.cnf | "${GREP}" "${2}" | "${SED}" 's/.*=//;s/^ *//' | head -n 1`
-  eval "${1}"="${variable}"
-  return 0
+  if [ -f "${DIR_TRABAJO}"/bki.cnf ]; then
+    local variable=`"${GREP}" -v "#" "${DIR_TRABAJO}"/bki.cnf | "${GREP}" "${2}" | "${SED}" 's/.*=//;s/^ *//' | head -n 1`
+    eval "${1}"="${variable}"
+    return 0
+  else
+    return 1
+  fi
 }
 
 mensaje() {

@@ -1,23 +1,30 @@
-= Version 0.6
+0.7
 
-Optimizacion y estandarizacion en el código fuente de bacKardi
+    - Organizacion y estandarizacion de los archivos.
+    - Se incorpora el archivo VERSION
+    - Es posible configurar el formato de la fecha para el nombre de los 
+      backups.
 
-= Version 0.5
+0.6
 
-Implementacion del unistall para eliminar backardi de la PC.
+    - Optimizacion y estandarizacion en el código fuente de bacKardi
 
-= Version 0.4
+0.5
 
-Implementacion de paginas de ayuda y manual de usuario.
+    - Implementacion del unistall para eliminar backardi de la PC.
 
-= Version 0.3
+0.4
 
-Implementacion de un instalador de la aplicacion.
+    - Implementacion de paginas de ayuda y manual de usuario.
 
-= Version 0.2
+0.3
 
-Implementacion de algoritmos de compresion rar, tar, tar.gz, tar.bz2 y arj.
+    - Implementacion de un instalador de la aplicacion.
 
-= Version 0.1
+0.2
 
-Primer trabajo para la version beta de bacKardi. En primera instancia solo en lenguaje Espanol. Armado de la estructura jerarquica de directorios.
+    - Implementacion de algoritmos de compresion rar, tar, tar.gz, tar.bz2 y arj.
+
+0.1
+
+    - Primer trabajo para la version beta de bacKardi. En primera instancia solo en lenguaje Espanol. Armado de la estructura jerarquica de directorios.

@@ -36,7 +36,6 @@ which_compress() {
 mensaje() {
   local mensaje="${1}"
   "${ECHO}" -e "${mensaje}"
-  #printf $(gettext "%s\n") "${mensaje}"
 }
 
 exito() {
@@ -78,7 +77,7 @@ DIR_ENLACE="/usr/sbin"
 DIR_MAN="/usr/share/man/man1"
 DIR_TRABAJO=`"${PWD}"`
 SISTEMA="bacKardi"
-VERSION="0.6"
+VERSION="0.7"
 
 # --------------- Control de usuario ------------------------
 
@@ -110,7 +109,8 @@ fi
 if ( [ -e "${DIR_DESTINO}"/backardi.sh ] ) ; then {
   mensaje_fracaso "No se puede copiar el archivo en "${DIR_DESTINO}"backardi.sh por que ya existe."
 } else {
-	"${CP}" backardi/backardi.sh "${DIR_DESTINO}"
+	#"${CP}" backardi/backardi.sh "${DIR_DESTINO}"
+  "${CP}" "${DIR_TRABAJO}"/bin/backardi.sh "${DIR_DESTINO}"
   if [ $? -eq 0 ]; then {
     mensaje_exito "Copiado "${DIR_DESTINO}"backardi.sh"
   }
@@ -123,7 +123,8 @@ fi
 if ( [ -e "${DIR_DESTINO}"/bki.cnf ] ) ; then {
   mensaje_fracaso "No se puede copiar el archivo en "${DIR_DESTINO}"bki.cnf por que ya existe."
 } else {
-	"${CP}" backardi/bki.cnf "${DIR_DESTINO}"
+	#"${CP}" backardi/bki.cnf "${DIR_DESTINO}"
+  "${CP}" "${DIR_TRABAJO}"/conf/bki.cnf "${DIR_DESTINO}"
   if [ $? -eq 0 ]; then {
     mensaje_exito "Copiado "${DIR_DESTINO}"bki.cnf"
   }
@@ -136,8 +137,8 @@ fi
 if ( [ -e "${DIR_ENLACE}"/backardi ] ) ; then {
   mensaje_fracaso "No se puede crear el enlace simbolico en "${DIR_ENLACE}"/backardi por que ya existe."
 } else {
-	$LN --symbolic $DIR_DESTINO/backardi.sh $DIR_ENLACE/backardi 
-	#$LN --symbolic $DIC_DESTINO/bki.cnf $DIR_ENLACE/
+	#$LN --symbolic $DIR_DESTINO/backardi.sh $DIR_ENLACE/backardi
+  "${LN}" --symbolic "$DIR_DESTINO"/backardi.sh "${DIR_ENLACE}"/backardi
   if [ $? -eq 0 ]; then {
     mensaje_exito "Copiado "${DIR_ENLACE}"/backardi"
   }
@@ -150,7 +151,8 @@ fi
 if ( [ -e "${DIR_MAN}"/backardi.1.gz ] ) ; then {
   mensaje_fracaso "No se puede copiar el manual en "${DIR_MAN}"/backardi.1.gz por que ya existe."
 } else {
-	"${CP}" backardi/backardi.1.gz "${DIR_MAN}"
+	#"${CP}" backardi/backardi.1.gz "${DIR_MAN}"
+  "${CP}" "${DIR_TRABAJO}"/man/backardi.1.gz "${DIR_MAN}"
   if [ $? -eq 0 ]; then {
     mensaje_exito "Copiado "${DIR_MAN}"/backardi.1.gz"
   }

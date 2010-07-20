@@ -57,7 +57,7 @@ which_cmd   RM      rm
 which_cmd   ID      id
 
 SISTEMA="bacKardi"
-VERSION="0.6"
+VERSION="0.7"
 DIR_INSTALL="/etc/backardi"
 DIR_MAN_INSTALL="/usr/share/man/man1"
 DIR_LN_INSTALL="/usr/sbin"
