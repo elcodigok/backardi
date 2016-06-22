@@ -17,29 +17,39 @@ Descripcion General
 Requerimientos
 --------------
 
-  * GNU/Linux
-        Cualquier distribucion instalada.
-
-  * tar
-
-  * gzip
-
-  * bzip2
-
-  * unrar
-
-  * unzip
-
-  * arj
+ * GNU/Linux: Cualquier distribucion instalada.
+ * tar
+ * gzip
+ * bzip2
+ * unrar
+ * unzip
+ * arj
 
 
 Uso
 ---
 
-  Para poder ejecutar backardi es necesario que seas super usuario root y se va
-  a encontrar el script en /sbin/backardi.
+  Para poder ejecutar **backardi** es necesario que seas super usuario root y se va
+  a encontrar el script en **/sbin/backardi**.
 
-  El directorio de configuracion general se va a encontrar en /etc/backardi en el 
+  El directorio de configuracion general se va a encontrar en **/etc/backardi** en el 
   vas a encotrar todas las configuraciones referentes al funcionamiento del sistema 
   de backup.
 
+
+Web del Proyecto
+----------------
+
+www.caceriadespammers.com.ar
+
+
+Repositorio GitHub
+------------------
+
+https://github.com/elcodigok/backardi
+
+
+Issues
+------
+
+https://github.com/elcodigok/backardi/issues

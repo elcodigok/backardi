@@ -4,8 +4,7 @@
 #
 # Autor:    Maldonado Daniel Martin
 #
-#			<danyx@elcodigok.com.ar>
-#			<danyx@larepaweb.com.ar>
+#			<daniel_5502@yahoo.com.ar>
 #
 # fecha:    06/07/2010
 #
