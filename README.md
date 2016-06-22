@@ -1,14 +1,11 @@
+bacKardi
+========
 
-                            bacKardi 
+Aplicación para realizar Backup en sistemas tipo Unix
 
-    *   Aplicación para realizar Backup en sistemas tipo Unix   *
-
-
-                    Daniel Martin Maldonado     <danyx@elcodigok.com.ar>
-                                                <danyx@larepaweb.com.ar>
 
 Descripcion General
---------------------------------------------------------------------------------
+-------------------
 
   Este programa es una implementación simple y rápida para la realizar de Backup
   en sistemas tipo Unix.
@@ -18,7 +15,7 @@ Descripcion General
 
 
 Requerimientos
---------------------------------------------------------------------------------
+--------------
 
   * GNU/Linux
         Cualquier distribucion instalada.
@@ -37,7 +34,7 @@ Requerimientos
 
 
 Uso
---------------------------------------------------------------------------------
+---
 
   Para poder ejecutar backardi es necesario que seas super usuario root y se va
   a encontrar el script en /sbin/backardi.
